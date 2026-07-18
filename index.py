@@ -34,3 +34,37 @@ total_height_meters = hat_height_cm + my_height_cm / 100
 
 8 - 3 * 2 - 1 + 1
 print((8 - 3) * (2 - (1 + 1)))
+
+# Variables representing the number of candies collected by alice, bob, and carol
+alice_candies = 121
+bob_candies = 77
+carol_candies = 109
+
+# Your code goes here! Replace the right-hand side of this assignment with an expression
+# involving alice_candies, bob_candies, and carol_candies
+to_smash = -1
+total_candies = alice_candies + bob_candies + carol_candies
+to_smash = total_candies % 3
+# print(to_smash)
+# print(alice_candies / 60)
+
+# Lesson 2 - Functions and Getting Help
+
+# help(print)
+
+
+def least_difference(a, b, c):
+    diff1 = abs(a - b)
+    diff2 = abs(b - c)
+    diff3 = abs(c - a)
+    return min(abs(a - b), abs(b - c), abs(c - a))
+
+
+print(
+    least_difference(1, 10, 100),
+    least_difference(1, 10, 10),
+    least_difference(5, 6, 7), # Python allows trailing commas in argument lists. How nice is that?
+)
+
+print(str(least_difference(1, 10, 100)) + " this is nice")
+
