@@ -16,4 +16,13 @@ spam_amount = 0
 # print(type(19.95))
 a = 65
 b = 60
-print(a // b)
+# print(a // b)
+
+hat_height_cm = 25
+my_height_cm = 190
+# How tall am I, in meters, when wearing my hat?
+total_height_meters = hat_height_cm + my_height_cm / 100
+# print("Height in meters =", total_height_meters, "?")
+
+print(min(5,6,7))
+print(max(5,6,7))
