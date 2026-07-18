@@ -24,5 +24,13 @@ my_height_cm = 190
 total_height_meters = hat_height_cm + my_height_cm / 100
 # print("Height in meters =", total_height_meters, "?")
 
-print(min(5,6,7))
-print(max(5,6,7))
+# print(min(5,6,7))
+# print(max(5,6,7))
+
+# print("You've successfully run some Python code")
+# print("Congratulations!")
+
+# Add parentheses to the following expression so that it evaluates to 0.
+
+8 - 3 * 2 - 1 + 1
+print((8 - 3) * (2 - (1 + 1)))
