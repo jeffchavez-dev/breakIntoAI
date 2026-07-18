@@ -60,11 +60,28 @@ def least_difference(a, b, c):
     return min(abs(a - b), abs(b - c), abs(c - a))
 
 
+# print(
+#     least_difference(1, 10, 100),
+#     least_difference(1, 10, 10),
+#     least_difference(5, 6, 7), # Python allows trailing commas in argument lists. How nice is that?
+# )
+
+# print(str(least_difference(1, 10, 100)) + " this is nice")
+
+
+def mult_by_five(x):
+    return 5 * x
+
+def call(fn, arg):
+    """Call fn on arg"""
+    return fn(arg)
+
+def squared_call(fn, arg):
+    """Call fn on the result of calling fn on arg"""
+    return fn(fn(arg))
+
 print(
-    least_difference(1, 10, 100),
-    least_difference(1, 10, 10),
-    least_difference(5, 6, 7), # Python allows trailing commas in argument lists. How nice is that?
+    call(mult_by_five, 1),
+    squared_call(mult_by_five, 1), 
+    sep='\n', # '\n' is the newline character - it starts a new line
 )
-
-print(str(least_difference(1, 10, 100)) + " this is nice")
-
